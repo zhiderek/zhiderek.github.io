@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posture Detection</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109832079-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-109832079-1');
+		</script>
+	</head>
+<body id="top">
+	<!-- Header -->
+	
+	<header id="header">
+		
+		<div class="inner">	
+			<a href="../index.html" id = "backhome" class="button">Back to home</a>		
+			<a href="../index.html" class="image avatar"><img src="../images/dz.png" alt="profile failed to load" /></a>
+			<h1><strong>Derek Zhi</strong>
+				<div>Software Engineer in Seattle</div>
+			</h1>
+		</div>
+	</header>
+	<!-- Main -->
+	<div id="main">
+		<section id="one">
+			<header class="major">
+				<h2>Detecting Compensatory Motion in Robotic Stroke Rehab</h2>
+			</header>
+		</section>
+		<section id="two">
+			<div class="row text-center">
+				<article class="6u 12u$(xsmall) work-item">
+					<video width="640" height="480" controls>
+						<source src="../videos/bt.mp4" type="video/mp4">
+					</video>
+					<!-- <a href="../videos/bt.mp4" class="image fit thumb"><img src="../images/bt.png" alt="vid failed to display"/></a> -->
+				</article>
+				<p id="caption">(The clip shows a participant maneuvering the robot as part of a scripted stroke rehab exercise)</p>
+			</div>
+
+			<p>
+				Robotic stroke therapy can greatly increase the efficiency of therapy delivery. However, when left unsupervised, users often compensate for limitations in affected muscles and joints by recruiting unaffected muscles and joints, leading to undesirable rehabilitation outcome.<br><br>
+				We aimed to detect such compensatory motions with a computer vision system based on Microsoft Kinect. We recorded the upper-limb motions of nine stroke survivors and ten healthy adults during robotic stroke exercises.<br> <br>
+				The 3-D joint positions were extracted to train and test two supervised classification models (SVM and RNN). The ROC plots are shown below:
+				<br><br>
+				<img src="../images/roc.png" height="560" width="640"><br><br>
+				For healthy participants, the SVM detected exhibited moderate accuracy in detecting compensations. The RNN obtained similar results. In contrast, classification performance was poort for stroke survivors using either classifier. To improve detection accuracy for stroke survivors, future work should focus on pre-defining the range of motion, direct camera placement, reducing the robotic arm height, and recording full therapy sessions. 
+				<br><br>
+				The journal paper is currently under review by IEEE Journal of Translational Engineering in Health and Medicine.
+			</p>
+			Technologies used: 
+				<ul>
+				<li>Motion tracking: Microsoft Kinect v2, OpenCV, Kinect Studio</li>
+				<li>Data Processing: Python, MATLAB</li>
+				<li>Machine Learning: Scikit-learn, Keras, TensorFlow</li>
+			</ul>
+
+			
+			<p>
+			Collaborators: <a href="http://www.cs.toronto.edu/~taati/">Babak Taati</a>, <a href="https://www.researchgate.net/profile/Elham_Dolatabadi">Elham Dolatabadi</a>, <a href="mailto:michelle.luk@live.ca">Michelle Lukasik</a>
+			</p>
+		</section>	
+	</div>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://github.com/derekapricorn" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="mailto:zhiderek@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/in/derekzhi" class="icon fa-linkedin"><span class="label">Email</span></a></li>
+			</ul>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.poptrox.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>
+

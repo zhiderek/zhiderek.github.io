@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sleep Analytic Toolkit</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109832079-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-109832079-1');
+		</script>
+	</head>
+<body id="top">
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">	
+			<a href="../index.html" id = "backhome" class="button">Back to home</a>		
+			<a href="../index.html" class="image avatar"><img src="../images/dz.png" alt="profile failed to load" /></a>
+			<h1><strong>Derek Zhi</strong>
+				<div>Software Engineer in Seattle</div>
+			</h1>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<section id="one"> 
+			<header class="major">
+				<h2>Sleep Analytic Toolkit for Clinical Professionals</h2>
+			</header>
+		</section>
+		<section id="two">
+			<!-- <div class="row"> -->
+			<p>
+				<img id="UI" src="../images/toolkit.png" width="680" height="480"><br>
+				<caption>(The image shows the Analysis view of the EEG signals)</caption>
+			</p>
+			
+			<p>
+				Polysomnography is a sleep study in which multi-parametric, physiologic measurements (blood pressure, respiration, EEG, ECG, etc.) are performed in order to diagnose and study sleep disorders. Various software tools are available for visualization of signals and annotation of sleep events such as sleep apnea. However, most of them are properitary and very few of them provide enough analytic power for research, which hinders the progress of sleep research. 
+			</p>
+			<p>
+				As such, there's a need for an open-source toolkit that allows for rapid and efficient data prototyping without sacrifice of analytic power. To that end, I led a team of three undergraduate students to develop a user-friendly software toolkit using Windows Presentation Foundation(WPF) and MATLAB. It's basic functions include previewing, channel selection, efficient data storage and retrival, respiratory analysis, and EEG analysis. 
+			</p>
+			<div class="row">
+				<article>The code can be found at <a href="https://github.com/KunalChoudhary521/Capstone">GitHub</a>. The demo tutorials are shown below.			
+				</article>
+				
+				<article class="6u 12u$(xsmall) work-item text-center">
+						<a href="https://youtu.be/eGMlDHGRWRg" class="image fit thumb" id=""><img src="../images/thumbs/1.png" alt="" /></a>
+						<h3>Open an EDF File</h3>
+
+				</article>
+				<article class="6u 12u$(xsmall) work-item text-center">
+						<a href="https://youtu.be/0a3yI1FmoYo" class="image fit thumb"><img src="../images/thumbs/2.png" alt="" /></a>
+						<h3>Previewing and Exporting to Binary</h3>
+				</article>
+				<article class="6u 12u$(xsmall) work-item text-center">
+						<a href="https://youtu.be/rjfjjjALXrA" class="image fit thumb"><img src="../images/thumbs/3.png" alt="" /></a>
+						<h3>Analysis and Tools</h3>
+				</article>
+				<article class="6u 12u$(xsmall) work-item text-center">
+						<a href="https://youtu.be/Yaum0KPjarI" class="image fit thumb"><img src="../images/thumbs/4.png" alt="" /></a>
+						<h3>Program options</h3>
+				</article>
+			</div> <!-- row -->
+			<div>
+				Technologies used:			
+				<ul>
+					<li>GUI: Windows Presentation Foundation (WPF), MahApps.Metro UI toolkit, OxyPlot</li>
+					<li>Signal Processing: MATLAB Runtime, C#</li>
+				</ul>
+				<p>
+				Collaborators: 
+				<a href="mailto:azadeh.yadollahi@uhn.ca">Azadeh Yadollahi</a>, 
+				<a href="mailto:kunal.choudhary@mail.utoronto.ca">Kunal Choudhary</a>, 
+				<a href="mailto:mohamed.maria@mail.utoronto.ca">Mohamed Maria</a>, 
+				<a href="mailto:zabeeh.ur.rahman@mail.utoronto.ca">Zabeeh Ur-Rahman</a>
+				</p>
+			</div>
+		</section>
+	</div> <!-- main -->
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://github.com/derekapricorn" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="mailto:zhiderek@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/in/derekzhi" class="icon fa-linkedin"><span class="label">Email</span></a></li>
+			</ul>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.poptrox.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>
+
